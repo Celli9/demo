@@ -19,24 +19,29 @@ print(f"Computer Choice: {computer_choice}")
 #Determine the winner
 u = user_choice
 c = computer_choice
+def determine_winner(u, c):
+    if u == "rock" and c == "rock":
+        return "TIE GAME"
+    elif u == "rock" and c == "paper":
+        return "COMPUTER WINS"
+    elif u == "rock" and c == "scissors":
+        return "USER WINS"
+    elif u == "paper" and c == "rock":
+        return "COMPUTER WINS" # OOPS
+    elif u == "paper" and c == "paper":
+        return "TIE GAME"
+    elif u == "paper" and c == "scissors":
+        return "USER WINS" # OOPS
+    elif u == "scissors" and c == "rock":
+        return "COMPUTER WINS"
+    elif u == "scissors" and c == "paper":
+        return "USER WINS"
+    elif u == "scissors" and c == "scissors":
+        return "TIE GAME"
 
-if u == "rock" and c == "rock":
-    print("TIE GAME")
-elif u == "rock" and c == "paper":
-    print("COMPUTER WINS")
-elif u == "rock" and c == "scissors":
-    print("USER WINS")
-elif u == "paper" and c == "rock":
-    print("COMPUTER WINS") # OOPS
-elif u == "paper" and c == "paper":
-    print("TIE GAME")
-elif u == "paper" and c == "scissors":
-    print("USER WINS") # OOPS
-elif u == "scissors" and c == "rock":
-    print("COMPUTER WINS")
-elif u == "scissors" and c == "paper":
-    print("USER WINS")
-elif u == "scissors" and c == "scissors":
-    print("TIE GAME")
+result = determine_winner(user_choice,computer_choice)
+print(result)
 
+# TO test code, need to use assert, and capture the code into a function (refactor the code -- reorg it w/o changing the logic)
 
+# assert determine_winner("rock","rock") == "TIE "
