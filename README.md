@@ -30,3 +30,23 @@ python app/rps.py
 #alternative "modular style" command:
 python -m app.rps
 ```
+
+Testing:
+```sh
+pytest
+```
+
+
+Create virtual env:
+```sh
+conda create -n my-first-env-fall-2025 python=3.11
+```
+activate virtual env:
+```sh
+conda activate my-first-env-fall-2025
+```
+install package dependencies:
+
+```sh
+pip install -r requirements.txt
+```
