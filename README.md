@@ -6,3 +6,27 @@ This is another sentence.
 
 Adding this content using the VS code text
 editor (locally). 
+
+## Setup
+Clone the repo to download it from github. Perhaps onto the desktop.
+
+Navigate to the repo from the command line.
+
+```sh
+cd ~/Users/alexanderbotticelli/Documents/GitHub/demo
+```
+
+## Usage
+
+Example script
+```sh
+python app/my_script.py
+```
+
+Game of RPS
+```sh
+python app/rps.py
+
+#alternative "modular style" command:
+python -m app.rps
+```
