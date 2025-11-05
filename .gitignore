@@ -3,4 +3,5 @@
 
 # clutter files
 __pycache__
+.pytest_cache
 # secret credentials
