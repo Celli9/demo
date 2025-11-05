@@ -1,0 +1,7 @@
+#"this is the .gitignore" file
+# we can mention names of other files in repo that we would like to ignore from being trakced in version control
+
+# clutter files
+__pycache__
+.pytest_cache
+# secret credentials
