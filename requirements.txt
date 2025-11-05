@@ -1,3 +1,9 @@
 # this is the requirements.txt file, this is a standard python convention to have your packages in a file like this
 
+#testing
 pytest
+
+#stocks code
+pandas
+python-dotenv
+plotly.express

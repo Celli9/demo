@@ -50,3 +50,9 @@ install package dependencies:
 ```sh
 pip install -r requirements.txt
 ```
+
+Stocks dashboard:
+
+```sh
+python -m app.stocks
+```
