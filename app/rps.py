@@ -39,7 +39,7 @@ def determine_winner(u, c):
     elif u == "scissors" and c == "scissors":
         return "TIE GAME"
 
-result = determine_winner(user_choice,computer_choice)
+result = determine_winner(u,c)
 print(result)
 
 # TO test code, need to use assert, and capture the code into a function (refactor the code -- reorg it w/o changing the logic)
