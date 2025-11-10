@@ -56,3 +56,15 @@ Stocks dashboard:
 ```sh
 python -m app.stocks
 ```
+
+
+## Configuration
+
+Obtain a premium AlphaVantage API Key (using the form or from the prof) alphavantage.co/support/#api-key
+
+Create a local ".env" file and store your api key as an environment variable in there:
+
+```sh 
+ALPHAVANTAGE_API_KEY = "________"
+
+```
