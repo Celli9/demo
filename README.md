@@ -68,3 +68,15 @@ Create a local ".env" file and store your api key as an environment variable in 
 ALPHAVANTAGE_API_KEY = "________"
 
 ```
+
+### Web App
+```sh
+# Mac OS #this flask app thing is an environment variable, so it goes in .env file:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
+```
