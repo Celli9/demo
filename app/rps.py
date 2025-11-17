@@ -3,7 +3,12 @@ import random
 
 valid_choices = ['ROCK','PAPER','SCISSORS']
 
+def generate_random_choice():
+    return random.choice(valid_choices)
+
 def determine_winner(u, c):
+    u=u.lower()
+    c=c.lower()
     if u == "rock" and c == "rock":
         return "TIE GAME"
     elif u == "rock" and c == "paper":
@@ -42,7 +47,7 @@ if __name__ == "__main__":
 
     # Generate random computer choice
 
-    computer_choice = random.choice(valid_choices)
+    computer_choice = generate_random_choice()
     print(f"Computer Choice: {computer_choice}")
 
     #Determine the winner
