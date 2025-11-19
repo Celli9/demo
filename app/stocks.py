@@ -11,6 +11,10 @@ load_dotenv() # read env vars from the ".env" file
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
 
+def format_usd(price):
+    return f"${price:2f}"
+
+
 # usually put this in the function, mine was giving me a bug, this is a docstring (documentation string)
 """Fetches stock data from the AlphaVantage API.
 
