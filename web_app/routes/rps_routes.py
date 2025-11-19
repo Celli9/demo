@@ -16,6 +16,7 @@ def form():
 @rps_routes.route('/rps/results', methods=['POST'])
 def results():
     print("RPS RESULTS...")
+    print(dict(request.form))
 
     # Get the user's choice from the form data
     user_choice = request.form.get('user_choice')
