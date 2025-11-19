@@ -3,6 +3,9 @@
 #testing
 pytest
 
+# app
+Flask
+
 #stocks code
 pandas
 python-dotenv
