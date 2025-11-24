@@ -10,3 +10,6 @@ Flask
 pandas
 python-dotenv
 plotly.express
+
+#prod server
+gunicorn
